@@ -23,7 +23,9 @@
  *
  */
 package java.util.function;
-
+/**
+ * 完全掌握
+ */
 import java.util.Objects;
 
 /**

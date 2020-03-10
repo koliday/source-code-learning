@@ -27,6 +27,10 @@ package java.util.function;
 import java.util.Objects;
 
 /**
+ * 完全掌握
+ */
+
+/**
  * 内置的四大核心函数式接口，接收一个参数并对其进行断言，返回一个布尔值断言结果
  * Represents a predicate (boolean-valued function) of one argument.
  *

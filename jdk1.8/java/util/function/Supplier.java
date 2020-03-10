@@ -24,6 +24,11 @@
  */
 package java.util.function;
 
+
+/**
+ * 完全掌握
+ */
+
 /**
  * 内置的四大核心函数式接口，不接收参数，直接返回一个值
  * Represents a supplier of results.

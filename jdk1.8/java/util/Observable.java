@@ -26,6 +26,10 @@
 package java.util;
 
 /**
+ * 基本掌握
+ */
+
+/**
  * 观察者模式的被观察者接口
  * This class represents an observable object, or "data"
  * in the model-view paradigm. It can be subclassed to represent an

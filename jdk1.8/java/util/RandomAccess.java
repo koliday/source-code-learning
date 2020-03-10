@@ -23,9 +23,23 @@
  *
  */
 
+/**
+ * 已阅
+ */
 package java.util;
 
 /**
+ * 完全掌握
+ */
+
+/**
+ * 用于标识可以随机访问List集合，仅用作标识，并没有抽象方法需要实现
+ * 随机访问是指在O(1)时间内获取元素的值
+ * ArrayList就实现了该接口，因为它底层是数组，可以通过索引进行O(1)访问
+ * LinkedList则没有实现该接口，因为它底层是列表，访问元素的时间复杂度为O(n)
+ * 这个接口设计的初衷是为了让一些需要访问list中元素的方法，能够通过这个接口的标识进行实现上的区分
+ * 避免用遍历的方式去访问能够随机访问的list，提高效率
+ * 具体的例子可以看Collections中的binarySearch方法，就通过区分RandomAccess接口，实现了两种二分查找的方法
  * Marker interface used by <tt>List</tt> implementations to indicate that
  * they support fast (generally constant time) random access.  The primary
  * purpose of this interface is to allow generic algorithms to alter their
@@ -45,7 +59,7 @@ package java.util;
  * access is often fuzzy.  For example, some <tt>List</tt> implementations
  * provide asymptotically linear access times if they get huge, but constant
  * access times in practice.  Such a <tt>List</tt> implementation
- * should generally implement this interface.  As a rule of thumb, a
+ * should generally implement this interface.  As a rule of thumb（经验之谈）, a
  * <tt>List</tt> implementation should implement this interface if,
  * for typical instances of the class, this loop:
  * <pre>

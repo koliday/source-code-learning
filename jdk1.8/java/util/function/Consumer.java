@@ -27,6 +27,10 @@ package java.util.function;
 import java.util.Objects;
 
 /**
+ * 完全掌握
+ */
+
+/**
  * 内置的四大核心函数式接口，接收并处理一个参数，没有返回值
  * Represents an operation that accepts a single input argument and returns no
  * result. Unlike most other functional interfaces, {@code Consumer} is expected
